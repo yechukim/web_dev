@@ -1,0 +1,11 @@
+img{
+    display: block;
+    margin:  0 auto;
+}
+.counter {
+    font-size:2em;
+    text-align: center;
+}
+.text {
+    text-align: center;
+}
