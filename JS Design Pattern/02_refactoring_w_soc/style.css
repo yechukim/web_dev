@@ -1,0 +1,23 @@
+img {
+	display: block;
+	margin: 0 auto;
+}
+.counter {
+	font-size: 2em;
+	text-align: center;
+}
+.text {
+	text-align: center;
+}
+
+.cat-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.cat-container > img {
+	object-fit: cover;
+}
+.clicked-cat {
+	margin: 0 auto;
+}
