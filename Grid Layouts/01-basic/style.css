@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap');
+
+body {
+    margin: 30px;
+    font-family: "Poppins";
+}
+
+.grid-container{
+    background-color: #eee;
+    max-inline-size: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 100px 200px 300px;
+    gap: 10px;
+    /* 그리드 아이템은 기본으로 꽉 채움 - stretch */
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.grid-container > div {
+    background: #ccc;
+    text-align: center;
+    padding:20px;
+    border: 1px solid #777;
+}
+
+.grid-container > div:nth-child(1){
+    /* 1에서 시작해서 2만큼 차지해 */
+    grid-column: 1 / span 2  ;
+}
+.grid-container > div:nth-child(2){
+    /* 시작포인트 설정 안하면 알아서 그 다음부터 설정됨  */
+    grid-column: span 3;
+}
+
+.grid-container > div:nth-child(4){
+    /* 2에서 시작해서 6에서 끝내  */
+    grid-column: 2 / 6;
+    /* 따로 하고 싶으면 이걸루  */
+    align-self:end;
+}
+.grid-container > div:nth-child(5){
+    /* 너비가 작으면 알아서 다음 row로 넘어감  */
+    grid-column: span 3; 
+    justify-self: end;
+}
+
+.grid-container > div:nth-child(6){
+    grid-column: span 3;
+    align-self: end;
+}
