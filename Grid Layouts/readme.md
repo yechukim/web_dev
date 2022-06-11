@@ -57,3 +57,6 @@ article.featured {
 > 미디어 쿼리를 이용해서 브라우저 창 크기에 맞게 사이즈 조절
 
 - 미디어 쿼리에 `max-inline-size`가 안먹는다. `max-width`만 먹는듯
+
+### 03 holy grail 
+>  전체를 그리드 컨테이너로 잡고, 안의 헤더, 아티클, 푸터 등 다 span 으로 영역을 지정해줬음 
