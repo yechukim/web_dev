@@ -37,3 +37,23 @@
 
 }
 ```
+
+### 02 multi column 
+
+```css
+/* 그리드 아이템이지만 그리드 컨테이너도 될 수 있음 */
+  
+article.featured {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:60px;
+  align-items: center;
+  border-bottom: 1px solid #bbc7c7;
+  padding-bottom: 40px;
+}
+```
+
+> 미디어 쿼리를 이용해서 브라우저 창 크기에 맞게 사이즈 조절
+
+- 미디어 쿼리에 `max-inline-size`가 안먹는다. `max-width`만 먹는듯
