@@ -104,3 +104,14 @@ nav h1 {
 ### 05 portfolio
 
 [참고 dribble design](https://dribbble.com/shots/6676866-Photographer-Portfolio/attachments)
+
+```css
+/*각 row가 같은 크기를 가지도록 */
+.welcome {
+	grid-auto-rows: 1fr;
+}
+```
+
+### 06 twelve columns
+
+[필머리 사이트] (https://www.fillmurray.com/)
